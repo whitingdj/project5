@@ -1,0 +1,10 @@
+
+.profile-pic{
+	@media #{$brk-narrow}{
+		@include greeting;
+	}
+	@media #{$brk-narrow}{
+		@include greeting;
+		vertical-align: top;
+	}
+}

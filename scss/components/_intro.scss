@@ -1,0 +1,9 @@
+.intro{
+	@include tablet{
+		@include greeting;
+	}
+	@include desktop{
+		@include greeting;
+		vertical-align: top;
+	}
+}

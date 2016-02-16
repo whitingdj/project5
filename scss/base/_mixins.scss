@@ -1,0 +1,37 @@
+// Text
+
+@mixin text($size, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+// Navigation design
+
+@mixin nav-design{
+	display: block;
+	padding: 10px 15px;
+	color: #222;
+	}
+
+//Profile Image and Intro Placement
+
+@mixin greeting{
+	float:right;
+	width:50%;
+	text-align: left;
+}
+
+//Media Queries
+
+@mixin tablet{
+	@media #{$brk-narrow} {
+		@content
+	}
+}
+
+@mixin desktop{
+	@media #{$brk-wide} {
+		@content
+	}
+}

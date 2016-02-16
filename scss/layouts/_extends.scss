@@ -1,0 +1,33 @@
+// Center text
+
+%centered {
+ text-align: center;
+}
+
+
+//Columns
+
+%columns {
+  width: 100%;
+  @include tablet {
+    width: 50%;
+	float: left;
+	padding: 20px;
+  }
+  @include desktop {
+  	width: 33.33%;
+	float: left;
+	padding: 20px;
+  }
+}
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

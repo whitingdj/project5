@@ -1,0 +1,62 @@
+/*****************************
+BASE STYLES
+*****************************/
+
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	@include text(1em, 300, $color: $body_color);
+	font-family: $lato;
+	width: 100%;
+}
+
+h1,
+h4,
+.main-nav a,
+.footer-nav a{
+	@include text(1.1em, 700, $color: $header_color);
+	font-family: $nunito;
+}
+
+h3{
+	font-family: $lato;
+}
+
+div h4{
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	display: inline-block;
+}
+
+img{
+	padding: 10px 15px;
+	width: 100%;
+}
+
+footer h4{
+	margin: 0;
+}
+
+footer li{
+	padding: 10px;
+}
+
+footer a{
+	color: $header_color;
+}
+
+/* Pseudo-classes ------------------ */
+
+a{
+	&:hover{
+	color: $light_gray;
+	}
+	&:visited,
+	&:active{
+		color: $black;
+	}
+}

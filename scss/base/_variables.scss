@@ -1,0 +1,17 @@
+// Descriptive color variables
+
+$black          : #000;
+$light_gray		: #bbb;
+$header_color	: #222;
+$body_color		: #888;
+
+// Font stacks
+
+$lato	: 'Lato', sans-serif;
+$nunito : 'Nunito', sans-serif;
+
+
+// Media query breakpoints
+
+$brk-narrow : '(min-width: 769px)';
+$brk-wide   : '(min-width: 1025px)';

@@ -1,0 +1,99 @@
+/****************************
+NAV LAYOUT 
+****************************/
+
+.name {
+ 	font-size: 2em;
+  	margin: 0;
+  	a {
+	  	@extend %centered;
+		@include nav-design;
+  	}
+  	@include tablet {
+  		display: inline-block;
+  	}
+  	@include desktop {
+  		float: left;
+  	}
+}
+
+.main-nav {
+	a {
+		@extend %centered;
+		@include nav-design;
+	}
+	@include desktop {
+  		float: right;
+  	}
+  	li {
+	@include tablet {
+	    display: inline-block;
+  	}
+  	@include desktop {
+  		float: left;
+  		margin-left: 12px;
+    	display: inline-block;
+  		}
+	}
+}
+
+
+.bottom-name{
+	font-size: 1.2em;
+	float: left;
+  	padding-right: 1em;
+  	a {
+	  	@extend %centered;
+		@include nav-design;
+  	}
+  	@include desktop {
+  		float: left;
+  	}
+}
+
+.footer-nav{
+	@extend %centered;
+	padding: 10px 15px;
+	color: #222;
+	float: right;
+	li {
+		display: inline-block;
+		float: left;
+	  	padding-right: 1em;
+	  	@include desktop {
+	  		float: left;
+	  		margin-left: 12px;
+	    	display: inline-block;
+  		}
+	}
+  	a {
+	  	@extend %centered;
+		@include nav-design;
+  	}
+  	li:nth-child(n+2){
+		display: none;
+		@include tablet {
+		display: inline-block;
+		}
+	}
+	li:first-child{
+	@include tablet {
+		display: none;
+	}
+	@include tablet {
+		.footer-nav{
+			float: right;
+		}
+	}
+	@include desktop {
+  		float: right;
+  		}
+	}
+}
+
+.bottom-name{
+	@include tablet {
+		display: inline-block;
+		float: left;
+	}
+}

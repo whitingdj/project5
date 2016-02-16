@@ -1,0 +1,31 @@
+/****************************
+LAYOUT CONTAINERS
+****************************/
+
+.main-header{
+	  padding-top: 1.5em;
+	  padding-bottom: 1.5em;
+	  margin-bottom: 10px;
+}
+
+.container{
+	@extend %clearfix;
+	padding-left: 1em;
+	padding-right: 1em;
+	@include desktop{
+		max-width: 100%;
+    	margin: 0 auto;
+	}
+ }
+
+.wrapper{
+	@extend %centered;
+}
+
+.main-footer{
+	background: #ddd;
+	padding: 2em 0;
+	@extend %centered;
+	border: dotted 2px #bbb;
+	margin: 10px;
+}	
