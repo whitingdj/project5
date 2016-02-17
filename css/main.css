@@ -387,7 +387,7 @@ h4,
 .footer-nav a {
   font-size: 1.1em;
   font-weight: 700;
-  color: #222;
+  color: $header_color;
   font-family: "Nunito", sans-serif; }
 
 h3 {
@@ -413,10 +413,11 @@ footer a {
   color: #222; }
 
 /* Pseudo-classes ------------------ */
-a:hover {
+.footer-nav a:hover,
+.main-nav a:hover,
+.name a {
   color: #bbb; }
-a:visited, a:active {
-  color: #000; }
+
 
 @media (min-width: 769px) {
   .profile-pic {
