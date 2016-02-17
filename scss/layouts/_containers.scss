@@ -6,12 +6,14 @@ LAYOUT CONTAINERS
 	  padding-top: 1.5em;
 	  padding-bottom: 1.5em;
 	  margin-bottom: 10px;
+	  font-size: $font-size;
 }
 
 .container{
 	@extend %clearfix;
 	padding-left: 1em;
 	padding-right: 1em;
+	font-size: $font-size;
 	@include desktop{
 		max-width: 100%;
     	margin: 0 auto;
@@ -28,4 +30,5 @@ LAYOUT CONTAINERS
 	@extend %centered;
 	border: dotted 2px #bbb;
 	margin: 10px;
+	font-size: $font-size;
 }	

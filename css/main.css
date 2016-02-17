@@ -387,7 +387,7 @@ h4,
 .footer-nav a {
   font-size: 1.1em;
   font-weight: 700;
-  color: $header_color;
+  color: #222;
   font-family: "Nunito", sans-serif; }
 
 h3 {
@@ -413,11 +413,8 @@ footer a {
   color: #222; }
 
 /* Pseudo-classes ------------------ */
-.footer-nav a:hover,
-.main-nav a:hover,
-.name a {
+a:hover {
   color: #bbb; }
-
 
 @media (min-width: 769px) {
   .profile-pic {
@@ -462,8 +459,7 @@ NAV LAYOUT
 
 .main-nav a {
   display: block;
-  padding: 10px 15px;
-  color: #222; }
+  padding: 10px 15px; }
 @media (min-width: 1025px) {
   .main-nav {
     float: right; } }
@@ -484,13 +480,16 @@ NAV LAYOUT
     display: block;
     padding: 10px 15px;
     color: #222; }
+  @media (min-width: 769px) {
+    .bottom-name {
+      display: inline-block;
+      float: left; } }
   @media (min-width: 1025px) {
     .bottom-name {
       float: left; } }
 
 .footer-nav {
   padding: 10px 15px;
-  color: #222;
   float: right; }
   .footer-nav li {
     display: inline-block;
@@ -503,8 +502,7 @@ NAV LAYOUT
         display: inline-block; } }
   .footer-nav a {
     display: block;
-    padding: 10px 15px;
-    color: #222; }
+    padding: 10px 15px; }
   .footer-nav li:nth-child(n+2) {
     display: none; }
     @media (min-width: 769px) {
@@ -520,22 +518,19 @@ NAV LAYOUT
     .footer-nav li:first-child {
       float: right; } }
 
-@media (min-width: 769px) {
-  .bottom-name {
-    display: inline-block;
-    float: left; } }
-
 /****************************
 LAYOUT CONTAINERS
 ****************************/
 .main-header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 1em; }
 
 .container {
   padding-left: 1em;
-  padding-right: 1em; }
+  padding-right: 1em;
+  font-size: 1em; }
   @media (min-width: 1025px) {
     .container {
       max-width: 100%;
@@ -545,7 +540,8 @@ LAYOUT CONTAINERS
   background: #ddd;
   padding: 2em 0;
   border: dotted 2px #bbb;
-  margin: 10px; }
+  margin: 10px;
+  font-size: 1em; }
 
 .name a, .main-nav a, .bottom-name a, .footer-nav, .footer-nav a, .wrapper, .main-footer {
   text-align: center; }

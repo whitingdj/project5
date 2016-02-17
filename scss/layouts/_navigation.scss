@@ -8,6 +8,7 @@ NAV LAYOUT
   	a {
 	  	@extend %centered;
 		@include nav-design;
+		color: $header_color;
   	}
   	@include tablet {
   		display: inline-block;
@@ -45,7 +46,12 @@ NAV LAYOUT
   	a {
 	  	@extend %centered;
 		@include nav-design;
+		color: $header_color;
   	}
+	@include tablet {
+		display: inline-block;
+		float: left;
+	}
   	@include desktop {
   		float: left;
   	}
@@ -54,7 +60,7 @@ NAV LAYOUT
 .footer-nav{
 	@extend %centered;
 	padding: 10px 15px;
-	color: $header_color;
+
 	float: right;
 	li {
 		display: inline-block;
@@ -91,9 +97,3 @@ NAV LAYOUT
 	}
 }
 
-.bottom-name{
-	@include tablet {
-		display: inline-block;
-		float: left;
-	}
-}
